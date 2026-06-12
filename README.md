@@ -3,86 +3,37 @@
 `main image`
 
 ## Description:
-Outline for general FULLSTACK DEVELOPMENT PROJECTs
+R is a programming language mostly for data processing, R Studio is for data visualization in regards to population data. This is mostly to refresh, remind, and continue to understand the basics for data science. 
 
-## Technology Stack
-- **Frontend/Client:** React.js, HTML5, CSS, framework, etc.
-- **API:** Api calls or external sources used
-- **Backend/Server:** node.js/express or python alternatives, include databases
+## Common Knowledge:
 
-<h2 align="center">Video:</h2>
-
-## Screen Shots:
-<p align="center">Please reference the screenshot folder for more available images</p>
-
-`selected image 1`
-
-`selected image 2`
-
-`selected image 3`
-
-## Run Code (Environment)
-
-### Front-End Instructions `<examples below>`
-- confirm that config is appropriate:
+Reading initial data in:
 ```
-> node -v
-> npm -v
-> git --version
+data <- read.csv("mydata.csv")
 ```
 
-- Initial package.json & install dependenies(localhost:3000):
-    - Must be `cd`'d into frontend/client for install
-    - MUI, `react-router-dom`, redux, formik, etc... (see resources)
+Reading in with Tidyverse:
 ```
-> npx create-react-app <project name>
-> cd <project name>
-> npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
-> npm install --save react-router-dom
-> npm install react-redux @reduxjs/toolkit
-> npm install formik yup dotenv react-responsive-carousel
-> npm install --save @stripe/react-stripe-js @stripe/stripe-js
-```
-- Test front-end once pages are generated (ctrl-c to exit):
-```
-> npm run start
+library(readr)
+
+data <- read_csv("mydata.csv")
 ```
 
-### Back-End Helpful Instructions `<examples below>`
-- Initial package.json & install dependencies:
-    - Must be `cd`'d into backend/server for install
-```
-> npx create-strapi-app@latest <project name>
-> cd <project name>
-> npm install --save stripe
-```
-- Strapi Database generated (ctrl-c to exit):
-```
-> npm run develop
-```
-- **Avoid** *npm run start* and use the `npm run develop`. 
-- Allow server to restart with each edit (see resources): 
-    - **Content-Type Builder**: Item entry
-    - **Media Library**: upload photos
-    - **Permissions**: Settings > Roles > Public
-- When using .env variables remember to [install prior](https://www.npmjs.com/package/dotenv/v/14.0.0)
-```
-npm install dotenv --save
-```
--
-    - Create a .env file in the root directory of your project.
-    - Import and configure dotenv.
-    - Establish a .gitignore [here](https://git-scm.com/docs/gitignore)
 
-- In frontend fetch `item` from backend (*localhost:1337*):
+
+GGplot installation
+
 ```
-const grouping = "items"
-const items = await fetch(
-`http://localhost:1337/api/${grouping}`
-)
+# The easiest way to get ggplot2 is to install the whole tidyverse:
+install.packages("tidyverse")
+
+# Alternatively, install just ggplot2:
+install.packages("ggplot2")
+
+# Or the development version from GitHub:
+# install.packages("pak")
+pak::pak("tidyverse/ggplot2")
 ```
---------------------------
-### Deployment
 
 
 
@@ -95,17 +46,23 @@ Connect with me on <a href="https://www.linkedin.com/in/ayla-nelson/">LinkedIn</
 Connect with me on <a href="https://github.com/oakHalo">Oakhalo.dev</a>
 
 ## Resources:
+**GGplot** is an open-source data visualization package for the R programming language: [documentation](https://ggplot2.tidyverse.org/)
+    - Gallery with Additional [info](https://r-graph-gallery.com/ggplot2-package.html)
+    - Cornell has Additional Information [here](https://physiology.med.cornell.edu/people/banfelder/qbio/lecture_notes/intro2ggplot.html)
+    
+**Dplyr** is an open-source R package that provides a consistent, fast, and intuitive toolkit for data manipulation and transformation.
 
-- `Tech used and links associated`
-- `Tech used and links associated`
+**Dplyr** is an open-source R package that provides a consistent, fast, and intuitive toolkit for data manipulation and transformation.
 
-`<examples below>`
-- **PostMan** for API Tests [here](https://www.postman.com/)
-    - jsonwebtoken / [jwt](https://jwt.io/) for Authentification & install [here](https://www.npmjs.com/package/jsonwebtoken)
-    - jwt Debugger [here](https://jwt.io/#debugger-io)
-- **React.New** allows for testing new React projects [here](react.new)
-- [bcrypt.js](https://www.npmjs.com/package/bcryptjs) part of password hasing for user Authentification. 
+**readr** is an R package for fast, consistent import of rectangular data, such as CSV and TSV files
 
+**tidyr** is an open-source R package that provides tools for creating “tidy data,” a standardized structure where each variable forms a column, each observation forms a row, and each value occupies a single cell
+
+**stringr** is an open-source R package providing a consistent, easy-to-use interface for string manipulation.
+
+R for [Data Science](https://r4ds.hadley.nz/spreadsheets.html)
+
+R Dataset Packages for [practice](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
 
 #### **style:** 
 - `frameworks and links associated`
