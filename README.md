@@ -1,6 +1,6 @@
-<h1 align="center">projectsFULLSTACK</h1>
+<h1 align="center">R Studio Data</h1>
 
-`main image`
+<p align="center"><a href=""><img src="image/Example01.png"></img></a></p>
 
 ## Description:
 R is a programming language mostly for data processing, R Studio is for data visualization in regards to population data. This is mostly to refresh, remind, and continue to understand the basics for data science. 
