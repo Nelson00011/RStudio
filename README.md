@@ -1,6 +1,6 @@
 <h1 align="center">R Studio Data</h1>
 
-<p align="center"><a href=""><img src="image/Example01.png"></img></a></p>
+<p align="center"><a href=""><img width="250" src="image/Example01.png"></img></a></p>
 
 ## Description:
 R is a programming language mostly for data processing, R Studio is for data visualization in regards to population data. This is mostly to refresh, remind, and continue to understand the basics for data science. 
@@ -64,6 +64,8 @@ R for [Data Science](https://r4ds.hadley.nz/spreadsheets.html)
 
 R Dataset Packages for [practice](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
 
+Visual Studio Code [R](https://code.visualstudio.com/docs/languages/r)
+
 #### **style:** 
 - `frameworks and links associated`
 
@@ -75,7 +77,7 @@ R Dataset Packages for [practice](https://stat.ethz.ch/R-manual/R-devel/library/
 - `useful hints for future projects to go faster`
 - console log testing with `ctr-alt-l` 
 - Always Stay Positive & Triple Check Permissions :)
-
+- Remember to `quit()` to end the terminal in R `ctrl + Shift + S` to start R code
 
 
 
